@@ -19,9 +19,9 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./Data_Images/Image1.jpg "Visualization Data Random Images"
-[image2]: ./Data_Images/Image2.jpg "Visualization Data Bar Chart"
-[image3]: ./Data_Images/Image3.jpg "German Traffic Signs from Web"
+[image1]: ./Data_Images/Image1.png "Visualization Data Random Images"
+[image2]: ./Data_Images/Image2.png "Visualization Data Bar Chart"
+[image3]: ./Data_Images/Image3.png "German Traffic Signs from Web"
 [image4]: ./Web_Test_Images/No_Entry.jfif "No_Entry"
 [image5]: ./Web_Test_Images/SpeedLimit_50.jfif "SpeedLimit_50"
 [image6]: ./Web_Test_Images/Stop_Sign.jfif "Stop_Sign"
@@ -131,10 +131,10 @@ Here are the results of the prediction:
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Stop Sign      		| Stop sign   									| 
-| No Entry     			| No Entry 										|
+| No Entry     			| Priority road									|
 | Yield					| Yield											|
-| 50 km/h	      		| 50 km/h						 				|
-| Wild Animals Crossing | Wild Animals Crossing							|
+| 50 km/h	      		| Yield							 				|
+| Wild Animals Crossing | Bicycles crossing								|
 
 
 #### 3. Softmax Probabilities
