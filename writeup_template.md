@@ -136,21 +136,3 @@ Here are the results of the prediction:
 | 50 km/h	      		| Yield							 				|
 | Wild Animals Crossing | Bicycles crossing								|
 
-
-#### 3. Softmax Probabilities
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| No Entry 										|
-| .05					| Yield											|
-| .04	      			| 50 km/h						 				|
-| .01				    | Wild Animals Crossing							|
-
-
-For the second image ... 
-
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-#### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
-
-
