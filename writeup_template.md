@@ -27,6 +27,7 @@ The goals / steps of this project are the following:
 [image6]: ./Web_Test_Images/Stop_Sign.jfif "Stop_Sign"
 [image7]: ./Web_Test_Images/WildAnimalCrossing_Sign.jfif "WildAnimalCrossing_Sign"
 [image8]: ./Web_Test_Images/Yield_Sign.jfif "Yield_Sign"
+[image9]: ./Data_Images/Image4.png "Softmax Probabilities"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -101,18 +102,6 @@ To train the model, I used an Adam optimizer and following parameters:
 * validation set accuracy of 0.958
 * test set accuracy of 0.859
 
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
-
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
 
 ### Test a Model on New Images
 
@@ -123,6 +112,9 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image4] ![alt text][image5]
 ![alt text][image6] ![alt text][image7]
 ![alt text][image8]
+
+My input images was bright and clearly visible. I have resized the input images, converted 3 channels and applied Gaussian Blur to feed into LeNet
+
 
 #### 2. Model's predictions 
 
@@ -136,3 +128,11 @@ Here are the results of the prediction:
 | 50 km/h	      		| Yield							 				|
 | Wild Animals Crossing | Bicycles crossing								|
 
+
+The model was able to correctly guess 2 of 5 traffic signs, which has an accuracy of 40%. But the Test data accuracy of 85.9% shows that my model is overfitting and predicting other 3 images wrong.
+
+#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+
+For every image the softmax is predicting 100% correct even though only 2 (the first "Stop Sign" and third "Yield") out of 5 images are correct. Probably I need add dropout or do max pooling.
+
+![alt text][image9]
