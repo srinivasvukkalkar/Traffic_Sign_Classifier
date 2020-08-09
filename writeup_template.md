@@ -113,7 +113,7 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image6] ![alt text][image7]
 ![alt text][image8]
 
-My input images was bright and clearly visible. I have resized the input images, converted 3 channels and applied Gaussian Blur to feed into LeNet
+My input images was bright and clearly visible. I have resized the input images, converted to 3 channels and applied Gaussian Blur to feed into LeNet
 
 
 #### 2. Model's predictions 
